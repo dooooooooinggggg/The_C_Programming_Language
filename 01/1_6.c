@@ -6,11 +6,20 @@
 
 #include <stdio.h>
 
-main(){
-    double nc;
+main()
+{
+    int c;
 
-    for ( nc = 0; getchar() != EOF; nc++ ){
-        ;
+    while(1) {
+        c = getchar();
+        putchar(c);
+        if( c == EOF ) {
+            printf("\nc == EOF:1!!\n");
+            break;
+        }else{
+            printf("\nc == EOF:0\n");
+        }
     }
-    printf( "%.0f\n", nc );
+
+
 }
