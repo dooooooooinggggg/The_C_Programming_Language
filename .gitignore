@@ -2,7 +2,6 @@
 ex*
 sample*
 
-
 !*.gitignore
 !*.c
 !*.md
