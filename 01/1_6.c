@@ -6,20 +6,11 @@
 
 #include <stdio.h>
 
-main()
-{
+main() {
     int c;
 
-    while(1) {
-        c = getchar();
-        putchar(c);
-        if( c == EOF ) {
-            printf("\nc == EOF:1!!\n");
-            break;
-        }else{
-            printf("\nc == EOF:0\n");
-        }
+    while( c = (getchar() != EOF) ) {
+        printf("%d\n", c);
     }
-
-
+    printf("EOF:%d\n", c);
 }
