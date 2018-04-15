@@ -11,10 +11,11 @@ int main(void){
     step = 1;
 
     fahr = lower;
+
+    printf("%3s:%6s\n", "F", "C");
     while( fahr <= upper ){
         celsius = (5.0 / 9.0) * (fahr-32.0);
 
-        // 見出しとは
         printf("%3.0f %6.0f\n", fahr, celsius);
         fahr = fahr + step;
     }
