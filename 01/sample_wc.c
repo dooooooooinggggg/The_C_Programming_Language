@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-#define IN  1
+#define IN 1
 #define OUT 0
 
-main()
+int main()
 {
     int c, nl, nw, nc, state;
 
@@ -12,15 +12,21 @@ main()
     while ((c = getchar()) != EOF)
     {
         nc++;
-        if(c == '\n'){
+        if (c == '\n')
+        {
             nl++;
         }
-        if(c == ' ' || c == '\n' || c == '\t'){
+        if (c == ' ' || c == '\n' || c == '\t')
+        {
             state = OUT;
-        }else if(state == OUT) {
+        }
+        else if (state == OUT)
+        {
             state = IN;
             nw++;
         }
     }
     printf("%d %d %d\n", nl, nw, nc);
+
+    return 1;
 }
