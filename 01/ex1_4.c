@@ -2,7 +2,8 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void)
+{
     float celsius, fahr;
     int lower, upper, step;
 
@@ -13,7 +14,8 @@ int main(void){
     celsius = lower;
 
     printf("%3s:%6s\n", "C", "F");
-    while( celsius <= upper ){
+    while (celsius <= upper)
+    {
         fahr = (9.0 / 5.0) * celsius + 32;
 
         printf("%3.0f %6.0f\n", celsius, fahr);

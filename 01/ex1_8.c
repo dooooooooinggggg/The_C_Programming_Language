@@ -12,19 +12,13 @@ main()
     {
 
         if (c == "\t")
-        {
             tl++;
-        }
 
         if (c == " ")
-        {
             sl++;
-        }
 
         if (c == "\n")
-        {
             nl++;
-        }
 
         printf("c:%d\n", c);
     }
